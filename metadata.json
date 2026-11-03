@@ -1,0 +1,6 @@
+{
+  "name": "NutriSync",
+  "description": "AI-personalized supplement and vitamin timing schedule with grounded nutrient intelligence and adherence tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

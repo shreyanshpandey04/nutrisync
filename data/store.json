@@ -1,0 +1,330 @@
+{
+  "users": [
+    {
+      "id": "demo-user-1",
+      "email": "alex.rivera@example.com",
+      "name": "Alex Rivera"
+    },
+    {
+      "id": "user-1790060255560",
+      "email": "sarah@example.com",
+      "name": "Sarah Connor",
+      "password": "password123",
+      "createdAt": "2026-09-22T06:57:35.560Z"
+    }
+  ],
+  "profiles": {
+    "demo-user-1": {
+      "id": "demo-user-1",
+      "email": "alex.rivera@example.com",
+      "name": "Alex Rivera",
+      "age": 25,
+      "sex": "male",
+      "heightCm": 185,
+      "weightKg": 75,
+      "useImperial": false,
+      "pregnantOrNursing": false,
+      "hasIronDeficiency": false,
+      "activityLevel": "athlete",
+      "goals": [
+        "Muscle Gain & Performance",
+        "Stress & Mood",
+        "More Energy"
+      ],
+      "dietType": "omnivore",
+      "allergies": [],
+      "existingSupplements": [],
+      "existingMedications": [],
+      "wakeTime": "06:30",
+      "sleepTime": "23:00",
+      "mealCount": 3,
+      "breakfastTime": "07:30",
+      "lunchTime": "12:30",
+      "dinnerTime": "19:30",
+      "hasWorkout": true,
+      "workoutTime": "17:30"
+    }
+  },
+  "schedules": {
+    "demo-user-1": {
+      "schedule": [
+        {
+          "id": "sched-b-complex",
+          "nutrientId": "b-complex",
+          "nutrientName": "B-Complex",
+          "nutrientType": "Water-soluble vit",
+          "slot": "Morning",
+          "recommendedTime": "07:30",
+          "dosage": "Varies by specific B-vitamin (B1, B2, B3, B5, B6)",
+          "withFood": true,
+          "withFoodInstructions": "Light food helps prevent slight nausea and boosts metabolic synergy",
+          "synergyPartners": [
+            "Internally synergistic B vitamins"
+          ],
+          "conflictWarnings": [],
+          "cyclingNote": "Continuous",
+          "cyclingType": "Continuous",
+          "priorityScore": 4,
+          "reasons": [
+            "Targeted for your goals: Stress & Mood, More Energy"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-vit-d3",
+          "nutrientId": "vit-d3",
+          "nutrientName": "Vitamin D3",
+          "nutrientType": "Fat-soluble vit",
+          "slot": "Morning",
+          "recommendedTime": "07:30",
+          "dosage": "1,000 - 2,000 IU daily",
+          "withFood": true,
+          "withFoodInstructions": "Take with a meal containing healthy fats (avocado, eggs, olive oil)",
+          "synergyPartners": [
+            "Vitamin K2 (MK-7)",
+            "Magnesium (glycinate/citrate)",
+            "Calcium"
+          ],
+          "conflictWarnings": [],
+          "cyclingNote": "Continuous daily or regular maintenance",
+          "cyclingType": "Continuous",
+          "priorityScore": 1,
+          "reasons": [
+            "Targeted for your goals: Muscle Gain & Performance"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-zinc",
+          "nutrientId": "zinc",
+          "nutrientName": "Zinc",
+          "nutrientType": "Mineral",
+          "slot": "Morning",
+          "recommendedTime": "07:30",
+          "dosage": "8-11 mg elemental zinc",
+          "withFood": false,
+          "withFoodInstructions": "If nausea occurs, take with a light meal, but avoid high phytate/calcium meals",
+          "synergyPartners": [
+            "Vitamin A"
+          ],
+          "conflictWarnings": [
+            "Calcium",
+            "Iron",
+            "Copper (long-term high dose balance)"
+          ],
+          "cyclingNote": "Cycle high doses; monitor copper levels if >25mg daily for >8 weeks",
+          "cyclingType": "Continuous",
+          "priorityScore": 1,
+          "reasons": [
+            "Targeted for your goals: Muscle Gain & Performance"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-l-theanine",
+          "nutrientId": "l-theanine",
+          "nutrientName": "L-Theanine",
+          "nutrientType": "Amino acid",
+          "slot": "Morning",
+          "recommendedTime": "07:30",
+          "dosage": "100-200 mg",
+          "withFood": false,
+          "withFoodInstructions": "Optional with or without food",
+          "synergyPartners": [
+            "Caffeine (smooths jitteriness and blood pressure spike)"
+          ],
+          "conflictWarnings": [
+            "High-dose prescription sedatives"
+          ],
+          "cyclingNote": "Continuous or situational",
+          "cyclingType": "Continuous",
+          "priorityScore": 1,
+          "reasons": [
+            "Targeted for your goals: Stress & Mood"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-omega-3",
+          "nutrientId": "omega-3",
+          "nutrientName": "Omega-3 (EPA/DHA)",
+          "nutrientType": "Fatty acid",
+          "slot": "Midday",
+          "recommendedTime": "12:30",
+          "dosage": "1,000 - 1,500 mg combined EPA + DHA",
+          "withFood": true,
+          "withFoodInstructions": "Stimulates bile release for efficient emulsification and absorption",
+          "synergyPartners": [
+            "Vitamin E",
+            "Vitamin D3"
+          ],
+          "conflictWarnings": [
+            "High-dose blood thinners — flag"
+          ],
+          "cyclingNote": "Continuous",
+          "cyclingType": "Continuous",
+          "priorityScore": 2,
+          "reasons": [
+            "Targeted for your goals: Muscle Gain & Performance, Stress & Mood"
+          ],
+          "isDuplicateWithExisting": false,
+          "hardFlags": [
+            "blood thinners",
+            "aspirin",
+            "clopidogrel",
+            "warfarin"
+          ]
+        },
+        {
+          "id": "sched-protein",
+          "nutrientId": "protein",
+          "nutrientName": "Whey/Plant Protein",
+          "nutrientType": "Macronutrient",
+          "slot": "Post-Workout",
+          "recommendedTime": "6:30 PM (Post-Workout)",
+          "dosage": "25-30 g per serving (Target ~135g total daily from diet + shake)",
+          "withFood": false,
+          "withFoodInstructions": "Flexible with water, almond milk, or blended smoothie",
+          "synergyPartners": [
+            "Creatine Monohydrate"
+          ],
+          "conflictWarnings": [],
+          "cyclingNote": "Continuous",
+          "cyclingType": "Continuous",
+          "priorityScore": 4,
+          "reasons": [
+            "Targeted for your goals: Muscle Gain & Performance",
+            "Calculated for 75 kg weight and athlete routine"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-creatine",
+          "nutrientId": "creatine",
+          "nutrientName": "Creatine Monohydrate",
+          "nutrientType": "Performance",
+          "slot": "Post-Workout",
+          "recommendedTime": "6:30 PM (Post-Workout)",
+          "dosage": "3-5 g daily",
+          "withFood": false,
+          "withFoodInstructions": "Optional with carb/protein beverage to enhance intramuscular uptake via insulin response",
+          "synergyPartners": [
+            "Whey/Plant Protein",
+            "Carbohydrates"
+          ],
+          "conflictWarnings": [],
+          "cyclingNote": "Continuous (no cycling needed; saturation maintains cellular phosphocreatine pools)",
+          "cyclingType": "Continuous",
+          "priorityScore": 3,
+          "reasons": [
+            "Targeted for your goals: Muscle Gain & Performance"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-magnesium",
+          "nutrientId": "magnesium",
+          "nutrientName": "Magnesium (glycinate/citrate)",
+          "nutrientType": "Mineral",
+          "slot": "Bedtime",
+          "recommendedTime": "10:15 PM (Bedtime prep)",
+          "dosage": "380 mg elemental Magnesium (Glycinate)",
+          "withFood": false,
+          "withFoodInstructions": "Optional with or without food. Glycinate is gentle on gut; citrate supports motility",
+          "synergyPartners": [
+            "Vitamin D3",
+            "B6 (in B-Complex)"
+          ],
+          "conflictWarnings": [
+            "High-dose Calcium or Zinc at the exact same minute"
+          ],
+          "cyclingNote": "Continuous",
+          "cyclingType": "Continuous",
+          "priorityScore": 6,
+          "reasons": [
+            "Targeted for your goals: Muscle Gain & Performance, Stress & Mood, More Energy",
+            "Dosage scaled for body weight (75 kg) and high activity output"
+          ],
+          "isDuplicateWithExisting": false
+        },
+        {
+          "id": "sched-ashwagandha",
+          "nutrientId": "ashwagandha",
+          "nutrientName": "Ashwagandha",
+          "nutrientType": "Adaptogen",
+          "slot": "Bedtime",
+          "recommendedTime": "10:15 PM (Bedtime prep)",
+          "dosage": "300-600 mg standardized root extract (e.g. KSM-66)",
+          "withFood": false,
+          "withFoodInstructions": "Optional with a light evening snack or warm chamomile tea",
+          "synergyPartners": [
+            "Magnesium (glycinate/citrate)",
+            "L-Theanine"
+          ],
+          "conflictWarnings": [
+            "Thyroid medications",
+            "Prescription sedatives — flag"
+          ],
+          "cyclingNote": "Cycle 8-12 weeks on / 2-4 weeks off to prevent receptor desensitization",
+          "cyclingType": "Cycled",
+          "priorityScore": 1,
+          "reasons": [
+            "Targeted for your goals: Stress & Mood"
+          ],
+          "isDuplicateWithExisting": false,
+          "hardFlags": [
+            "thyroid meds",
+            "sedatives",
+            "benzodiazepines"
+          ]
+        }
+      ],
+      "warnings": [
+        {
+          "id": "warn-iron-no-deficiency",
+          "severity": "critical",
+          "title": "Hard Flag: Iron Supplementation Without Confirmed Deficiency",
+          "description": "Iron accumulates in organs (hemochromatosis risk) and acts as a pro-oxidant. Guidelines strictly recommend against routine iron supplementation without a recent blood ferritin/hemoglobin test.",
+          "supplementsInvolved": [
+            "Iron"
+          ],
+          "actionRecommendation": "Iron recommendation suppressed. Obtain a serum ferritin blood panel before supplementing elemental iron."
+        }
+      ],
+      "computedBmi": 21.9,
+      "bmiCategory": "Normal weight",
+      "generatedAt": "2026-09-22T06:53:31.082Z"
+    }
+  },
+  "adherence": [
+    {
+      "date": "2026-09-22",
+      "scheduleItemId": "sched-protein",
+      "nutrientName": "Whey/Plant Protein",
+      "taken": true,
+      "timestamp": "2026-09-22T06:47:50.405Z"
+    },
+    {
+      "date": "2026-09-22",
+      "scheduleItemId": "sched-creatine",
+      "nutrientName": "Creatine Monohydrate",
+      "taken": true,
+      "timestamp": "2026-09-22T06:47:50.405Z"
+    },
+    {
+      "date": "2026-09-22",
+      "scheduleItemId": "sched-b-complex",
+      "nutrientName": "B-Complex",
+      "taken": true,
+      "timestamp": "2026-09-22T06:53:36.770Z"
+    },
+    {
+      "date": "2026-09-22",
+      "scheduleItemId": "sched-ashwagandha",
+      "nutrientName": "Ashwagandha",
+      "taken": true,
+      "timestamp": "2026-09-22T06:53:41.572Z"
+    }
+  ],
+  "currentSessionUserId": "demo-user-1"
+}
